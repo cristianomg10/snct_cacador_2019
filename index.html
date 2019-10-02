@@ -8,10 +8,21 @@
             src: url(fontes/Arciform.otf);
         }
         
-
         video{
             max-width: 100%;
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        a.anchor {
+            display: block;
+            position: relative;
+            top: -150px;
+            visibility: hidden;
+        }
+
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -31,7 +42,7 @@
     <!-- VIDEO -->
     <div class="container">
         <div class="row">
-            <video  class="bg-video col-12 p-0" autobuffer loop muted autoplay  playsinline poster="img/SNCTposter.jpg">
+            <video  class="bg-video col-12 p-0" autobuffer muted autoplay  playsinline poster="img/SNCTposter.jpg">
                 <source src="videos/SNCT.ogg" type="video/ogg" >
             </video>
         </div>
@@ -73,7 +84,9 @@
 
 
     <!-- SOBRE -->
-    <section id="sobre" class="col-12 text-dark p-md-5 p-3 " style="background-color: lightskyblue;">
+
+    <a class="anchor" id="sobre"></a>
+    <section class="col-12 text-dark p-md-5 p-3 " style="background-color: lightskyblue;">
         <div class="container">
             <div class="row">
                 <h1 class="text-center section-title col-12 mb-5 ">SOBRE</h1>
@@ -87,7 +100,8 @@
         </div>
         </section>
     <!-- TEMA -->
-    <section id="tema" class="col-12 bg-white text-dark p-md-5 p-3">
+    <a class="anchor" id="tema"></a>
+    <section class="col-12 bg-white text-dark p-md-5 p-3">
         <div class="container">
             <div class="row">
                 <h1 class="text-center section-title col-12 ">TEMA</h1>
@@ -98,7 +112,9 @@
         </div>
     </section>
     <!-- PALESTRANTES -->
-    <section id="palestrantes" class="col-12 text-dark p-md-5 p-3 " style="background-color: lightskyblue;">
+
+    <a class="anchor" id="palestrantes"></a>
+    <section class="col-12 text-dark p-md-5 p-3 " style="background-color: lightskyblue;">
         <div class="container">
             <div class="row">
             <h1 class="text-center section-title col-12 ">PALESTRANTES</h1>
@@ -163,7 +179,8 @@
             </div>
         </section>
     <!-- LOCALIZAÇÃO -->
-    <section id="localizacao" class="col-12 bg-white text-dark p-md-5 p-3">
+    <a class="anchor" id="localizacao"></a>
+    <section class="col-12 bg-white text-dark p-md-5 p-3">
         <div class="container">
             <div class="row">
                 <h1 class="text-center section-title col-12 mb-3">LOCALIZAÇÃO</h1>
@@ -180,7 +197,8 @@
         </div>
     </section>
     <!-- EDICOES ANTERIORES -->
-    <section id="anterior" class="col-12 text-dark p-md-5 p-3 " style="background-color: lightskyblue;">
+    <a class="anchor" id="anterior"></a>
+    <section class="col-12 text-dark p-md-5 p-3 " style="background-color: lightskyblue;">
         <div class="container">
             <div class="row">
                 <h1 class="text-center section-title col-12 mb-5">EDIÇÕES ANTERIORES</h1>
