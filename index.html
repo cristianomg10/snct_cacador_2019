@@ -8,10 +8,21 @@
             src: url(fontes/Arciform.otf);
         }
         
-
         video{
             max-width: 100%;
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        a.anchor {
+            display: block;
+            position: relative;
+            top: -150px;
+            visibility: hidden;
+        }
+
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -31,7 +42,7 @@
     <!-- VIDEO -->
     <div class="container">
         <div class="row">
-            <video  class="bg-video col-12 p-0" autobuffer loop muted autoplay  playsinline poster="img/SNCTposter.jpg">
+            <video  class="bg-video col-12 p-0" autobuffer muted autoplay  playsinline poster="img/SNCTposter.jpg">
                 <source src="videos/SNCT.ogg" type="video/ogg" >
             </video>
         </div>
@@ -73,7 +84,9 @@
 
 
     <!-- SOBRE -->
-    <section id="sobre" class="col-12 text-dark p-md-5 p-3 " style="background-color: lightskyblue;">
+
+    <a class="anchor" id="sobre"></a>
+    <section class="col-12 text-dark p-md-5 p-3 " style="background-color: lightskyblue;">
         <div class="container">
             <div class="row">
                 <h1 class="text-center section-title col-12 mb-5 ">SOBRE</h1>
@@ -87,7 +100,8 @@
         </div>
         </section>
     <!-- TEMA -->
-    <section id="tema" class="col-12 bg-white text-dark p-md-5 p-3">
+    <a class="anchor" id="tema"></a>
+    <section class="col-12 bg-white text-dark p-md-5 p-3">
         <div class="container">
             <div class="row">
                 <h1 class="text-center section-title col-12 ">TEMA</h1>
@@ -98,7 +112,9 @@
         </div>
     </section>
     <!-- PALESTRANTES -->
-    <section id="palestrantes" class="col-12 text-dark p-md-5 p-3 " style="background-color: lightskyblue;">
+
+    <a class="anchor" id="palestrantes"></a>
+    <section class="col-12 text-dark p-md-5 p-3 " style="background-color: lightskyblue;">
         <div class="container">
             <div class="row">
             <h1 class="text-center section-title col-12 ">PALESTRANTES</h1>
@@ -106,12 +122,12 @@
                     <!-- palestrante 1 -->
                     <article class="col-md-6 col-sm-12 mt-2">
 
-                            <img  class="p-0 border shadow border-white rounded-circle col-sm-12 col-md-8 bg-white" src="img/palestrante.jpg" width="1000px" >
-                            <button class="btn btn-light shadow text-dark col-sm-12 col-md-8 d-flex justify-content-between mt-1" style="font-size: 20px" type="button" data-toggle="collapse" data-target="#infoPalestrante1" aria-expanded="false" aria-controls="infoPalestrante1">
+                            <img  class="p-0 border shadow border-white rounded-circle col-sm-12 col-md-8 offset-md-2 bg-white" src="img/palestrante.jpg" width="1000px" >
+                            <button class="btn btn-light shadow text-dark col-sm-12 col-md-8 offset-md-2 d-flex justify-content-between mt-1" style="font-size: 20px" type="button" data-toggle="collapse" data-target="#infoPalestrante1" aria-expanded="false" aria-controls="infoPalestrante1">
                                Renan <i class="mt-1 fas fa-plus fa-1x"></i>
                             </button>
                             <div class="collapse" id="infoPalestrante1">
-                                <div class="card card-body  col-sm-12 col-md-8">
+                                <div class="card card-body  col-sm-12 col-md-8 offset-md-2">
                                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                                 </div>
                             </div>
@@ -121,12 +137,12 @@
 
                     <!-- palestrante 2 -->
                     <article class="col-md-6 col-sm-12 mt-2 ">
-                        <img  class="p-0 border shadow border-white rounded-circle col-sm-12 col-md-8 bg-white" src="img/palestrante2.jpg" width="100px" >
-                        <button class="btn btn-light shadow text-dark col-sm-12 col-md-8 d-flex justify-content-between mt-1" style="font-size: 20px" type="button" data-toggle="collapse" data-target="#infoPalestrante2" aria-expanded="false" aria-controls="infoPalestrante2">
+                        <img  class="p-0 border shadow border-white rounded-circle col-sm-12 col-md-8 offset-md-2 bg-white" src="img/palestrante2.jpg" width="100px" >
+                        <button class="btn btn-light shadow text-dark col-sm-12 col-md-8 offset-md-2 d-flex justify-content-between mt-1" style="font-size: 20px" type="button" data-toggle="collapse" data-target="#infoPalestrante2" aria-expanded="false" aria-controls="infoPalestrante2">
                             Rogerinho <i class="mt-1 fas fa-plus fa-1x"></i>
                         </button>
                         <div class="collapse" id="infoPalestrante2">
-                            <div class="card card-body  col-sm-12 col-md-8">
+                            <div class="card card-body  col-sm-12 col-md-8 offset-md-2">
                                 Achou que ia ter texto genérico aqui?! Achou errado, otário!
                             </div>
                         </div>
@@ -135,12 +151,12 @@
 
                     <!-- palestrante 3 -->
                     <article class="col-md-6 col-sm-12 mt-2 ">
-                    <img  class="p-0 border shadow border-white rounded-circle col-sm-12 col-md-8 bg-white" src="img/palestrante3.jpg" width="100px" >
-                    <button class="btn btn-light shadow text-dark col-sm-12 col-md-8 d-flex justify-content-between mt-1" style="font-size: 20px" type="button" data-toggle="collapse" data-target="#infoPalestrante3" aria-expanded="false" aria-controls="infoPalestrante3">
+                    <img  class="p-0 border shadow border-white rounded-circle col-sm-12 col-md-8 offset-md-2 bg-white" src="img/palestrante3.jpg" width="100px" >
+                    <button class="btn btn-light shadow text-dark col-sm-12 col-md-8 offset-md-2 d-flex justify-content-between mt-1" style="font-size: 20px" type="button" data-toggle="collapse" data-target="#infoPalestrante3" aria-expanded="false" aria-controls="infoPalestrante3">
                         Julinho <i class="mt-1 fas fa-plus fa-1x"></i>
                     </button>
                     <div class="collapse" id="infoPalestrante3">
-                        <div class="card card-body  col-sm-12 col-md-8">
+                        <div class="card card-body  col-sm-12 col-md-8 offset-md-2">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>
@@ -148,12 +164,12 @@
 
                     <!-- palestrante 3 -->
                     <article class="col-md-6 col-sm-12 mt-2 ">
-                    <img  class="p-0 border shadow border-white rounded-circle col-sm-12 col-md-8 bg-white" src="img/palestrante4.jpg" width="100px" >
-                    <button class="btn btn-light shadow text-dark col-sm-12 col-md-8 d-flex justify-content-between mt-1" style="font-size: 20px" type="button" data-toggle="collapse" data-target="#infoPalestrante4" aria-expanded="false" aria-controls="infoPalestrante4">
+                    <img  class="p-0 border shadow border-white rounded-circle col-sm-12 col-md-8 offset-md-2 bg-white" src="img/palestrante4.jpg" width="100px" >
+                    <button class="btn btn-light shadow text-dark col-sm-12 col-md-8 offset-md-2 d-flex justify-content-between mt-1" style="font-size: 20px" type="button" data-toggle="collapse" data-target="#infoPalestrante4" aria-expanded="false" aria-controls="infoPalestrante4">
                         Maurílio dos Anjos <i class="mt-1 fas fa-plus fa-1x"></i>
                     </button>
                     <div class="collapse" id="infoPalestrante4">
-                        <div class="card card-body  col-sm-12 col-md-8">
+                        <div class="card card-body  col-sm-12 col-md-8 offset-md-2">
                             Uma palestra com o próprio palestrinha!
                         </div>
                     </div>
@@ -163,7 +179,8 @@
             </div>
         </section>
     <!-- LOCALIZAÇÃO -->
-    <section id="localizacao" class="col-12 bg-white text-dark p-md-5 p-3">
+    <a class="anchor" id="localizacao"></a>
+    <section class="col-12 bg-white text-dark p-md-5 p-3">
         <div class="container">
             <div class="row">
                 <h1 class="text-center section-title col-12 mb-3">LOCALIZAÇÃO</h1>
@@ -180,7 +197,8 @@
         </div>
     </section>
     <!-- EDICOES ANTERIORES -->
-    <section id="anterior" class="col-12 text-dark p-md-5 p-3 " style="background-color: lightskyblue;">
+    <a class="anchor" id="anterior"></a>
+    <section class="col-12 text-dark p-md-5 p-3 " style="background-color: lightskyblue;">
         <div class="container">
             <div class="row">
                 <h1 class="text-center section-title col-12 mb-5">EDIÇÕES ANTERIORES</h1>
@@ -249,7 +267,7 @@
         </div>
     </section>
     </div>
-    <footer class="col-12 text-dark  " style="background-color: lightskyblue;">
+    <footer class="col-12 text-dark  " style="background-color: lightskyblue;"> 
         <div class="container">
             <div class="row">
                 <article class="col-md-12 col-sm-12 text-center mt-2 mb-3" >
