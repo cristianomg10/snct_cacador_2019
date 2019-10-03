@@ -7,9 +7,10 @@
             font-family: Arciform;
             src: url(fontes/Arciform.otf);
         }
-        
+
         video{
             max-width: 100%;
+            border: none;
         }
 
         html {
@@ -46,8 +47,8 @@
     <!-- VIDEO -->
     <div class="container">
         <div class="row">
-            <video  class="bg-video col-12 p-0" autobuffer muted autoplay  playsinline poster="img/SNCTposter.jpg">
-                <source src="videos/video.mp4" type="video/mp4" >
+            <video  class="col-md-12 " autobuffer muted autoplay  playsinline poster="img/SNCTposter.jpg">
+                <source src="videos/SNCT.mp4" type="video/mp4"  >
             </video>
         </div>
     </div>
@@ -55,7 +56,7 @@
     <header class="sticky-top container p-0 col-12">
             <nav class="col-12 navbar navbar-expand-lg navbar-light bg-white text-bg " id="myHeader" style="height: 150px; width: 100%;">
                 <a class="navbar-brand" href="#">
-                    <img src="img/logo.png" width="250px">
+                    <img src="img/logo.gif" width="220px">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -213,14 +214,14 @@
 
     <!-- PROGRAMACAO -->
     <a class="anchor" id="programacao"></a>
-    <section class="col-12 bg-white text-dark p-md-5 p-3 ">
+    <section class="col-md-12 col-sm-6 bg-white text-dark p-md-5 p-3 ">
         <div class="container">
             <div class="row">
             <h1 class="text-center section-title col-12 ">PROGRAMAÇÃO</h1>
 
                     <!-- palestrante 1 -->
                     <article class="col-md-12 col-sm-12 mt-2">
-                        <table class="table">
+                        <table class="table table-hover table-bordered table-responsive">
                           <thead>
                             <tr>
                               <th scope="col">#</th>
@@ -471,10 +472,12 @@
     <footer class="col-12 text-dark bg-white" style="background-color: lightskyblue;"> 
         <div class="container">
             <div class="row">
+
                 <article class="col-md-12 col-sm-12 text-center mt-4 mb-3" >
                     <img src="img/logoifsc.png" width="100px">
                     <img src="img/logotc.png" width="100px">
                     <p class="mt-3"><b>Tchô! Coders © 2019</b></p>
+
                 </article>
 
             </div>
