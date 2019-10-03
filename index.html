@@ -28,7 +28,7 @@
             font-size: 20px;
         }
 
-        a:hover > h4 {
+        a.nav-link.active {
             text-decoration: underline;
             text-decoration-color: lightskyblue;
         }
@@ -46,7 +46,7 @@
     <script src="https://kit.fontawesome.com/8ac21f36ef.js"></script>
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#list-example">
 
 
     <!-- VIDEO -->
@@ -69,7 +69,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse text-center bg-white " style="z-index: 10" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav" id="ul" >
+                    <ul class="navbar-nav" id="ul" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link" href="#sobre"><h4>SOBRE</h4></a>
                         </li>
@@ -855,5 +855,8 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+        $('body').scrollspy({ target: '#ul' });
+    </script>
 </body>
 </html>
