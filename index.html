@@ -28,6 +28,11 @@
             font-size: 20px;
         }
 
+        a.nav-link.active {
+            text-decoration: underline;
+            text-decoration-color: lightskyblue;
+        }
+
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -41,15 +46,17 @@
     <script src="https://kit.fontawesome.com/8ac21f36ef.js"></script>
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#list-example">
 
 
     <!-- VIDEO -->
     <div class="container">
         <div class="row">
+            <a href="#sobre">
             <video  class="col-md-12 " autobuffer muted autoplay  playsinline poster="img/SNCTposter.jpg">
                 <source src="videos/SNCT.mp4" type="video/mp4"  >
             </video>
+            </a>
         </div>
     </div>
     <!-- HEADER -->
@@ -62,7 +69,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse text-center bg-white " style="z-index: 10" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav" id="ul" >
+                    <ul class="navbar-nav" id="ul" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link" href="#sobre"><h4>SOBRE</h4></a>
                         </li>
@@ -214,7 +221,7 @@
 
     <!-- PROGRAMACAO -->
     <a class="anchor" id="programacao"></a>
-    <section class="col-md-12 col-sm-6 bg-white text-dark p-md-5 p-3 ">
+    <section class="col-md-12 bg-white text-dark p-md-5 p-3 ">
         <div class="container">
             <div class="row">
             <h1 class="text-center section-title col-12 ">PROGRAMAÇÃO</h1>
@@ -225,22 +232,22 @@
                           <thead>
                             <tr>
                               <th scope="col">#</th>
-                              <th scope="col">Projeto</th>
-                              <th scope="col">Alunos</th>
-                              <th scope="col">Horário</th>
-                              <th scope="col">Curso</th>
+                              <th scope="col" width="30%">Projeto</th>
+                              <th scope="col" width="40%">Estudantes</th>
+                              <th scope="col" width="10%">Horário</th>
+                              <th scope="col" width="20%">Curso</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
                               <th scope="row">1</th>
                               <td>Casas Sustentáveis</td>
-                              <td>Brenda Nunes Soares,
+                              <td>Brenda Soares,
                                 Carine Negrello,
-                                José Paulo Sutil,
-                                Luiz Pondes Heinrich,
+                                José Sutil,
+                                Luiz Heinrich,
                                 Maiquison de Freitas,
-                                Maria Eduarda Busato,
+                                Maria Busato,
                                 Otávio Casagrande</td>
                               <td>A definir</td>
                               <td>Integr. em Adm. 2</td>
@@ -248,12 +255,12 @@
                             <tr>
                               <th scope="row">2</th>
                               <td>Criação de site de prestação de serviços - Empregabilidade de mulheres estrangeiras</td>
-                              <td>Éderi Pinto Vieira,
-                                Isabelle Vitória Dos Santos,
-                                Luiza Folmann Dos Santos,
-                                Nicolli De Oliveira Rosa,
-                                Otavio Colussi De Almeida,
-                                Vítor Toscan Coelho</td>
+                              <td>Éderi Vieira,
+                                Isabelle Dos Santos,
+                                Luiza Dos Santos,
+                                Nicolli Rosa,
+                                Otavio De Almeida,
+                                Vítor Coelho</td>
                               <td>A definir</td>
                               <td>Integr. em Adm. 2</td>
 
@@ -276,12 +283,12 @@
                               <th scope="row">4</th>
                               <td>Jogo de Tabuleiro didático sobre sustentabilidade</td>
                               <td>Adrieli Dos Santos,
-                                Alexandre Fabricio De Moura Martins,
+                                Alexandre Martins,
                                 Gabriela Bigas,
                                 Kassiely Dos Santos,
-                                Lucas Emanuel Kehler,
+                                Lucas Kehler,
                                 Maria Fernanda Bortolini,
-                                Samira De Oliveira Andrade</td>
+                                Samira Andrade</td>
                               <td>A definir</td>
                               <td>Integr. em Adm. 2</td>
 
@@ -290,13 +297,378 @@
                               <th scope="row">5</th>
                               <td>A administração da reciclagem de resíduos plásticos</td>
                               <td>Ana Clara da Silva,
-                                Ana Paula Moreira dos Santos,
-                                Andriele Martins Machado,
-                                Estefani Alessandra Less da Silva,
-                                Guilherme Luís de Assunção,
+                                Ana Paula dos Santos,
+                                Andriele Machado,
+                                Estefani da Silva,
+                                Guilherme de Assunção,
                                 Thamires Morais</td>
                               <td>A definir</td>
                               <td>Integr. em Adm. 2</td>
+                            </tr>
+                            <!-- ADM 3-->
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Empreendedorismo Em Processos Organizacionais</td>
+                              <td>Gustavo Valentini,
+                                Ilana Zanotto,
+                                Julia Almeida,
+                                Kauane Machado</td>
+                              <td>A definir</td>
+                              <td>Integr. em Adm. 3</td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Villaggio Grando - Projeto De Consultoria</td>
+                              <td>Helen Dos Santos,
+                                Keisy Bataglion,
+                                Mariane Pereira</td>
+                              <td>A definir</td>
+                              <td>Integr. em Adm. 3</td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Empreendedorismo Em Processos Organizacionais: O Caso Da Feira Do Produtor Rural De Caçador</td>
+                              <td>Anna Peretto,
+                                Eduarda Lisboa,
+                                Gabriela Godoy,
+                                Jhennifer Bortese,
+                                Maiane Ribeiro,
+                                Naiana Dos Santos</td>
+                              <td>A definir</td>
+                              <td>Integr. em Adm. 3</td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>Empreendedorismo Em Processos Organizacionais: O Caso Da Empresa Coma Bem, Meu Bem</td>
+                              <td>Camila Galvão,
+                             Evelin Pereira,
+                             Juliana Giacomelli,
+                             Jhennifer De Souza,
+                             Vithor Daniel</td>
+                              <td>A definir</td>
+                              <td>Integr. em Adm. 3</td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">5</th>
+                              <td>Empreendedorismo Em Processos Organizacionais: O Caso Da J&J Manutenção</td>
+                              <td>Carolina Gonçalves,
+                                Elias Lisboa,
+                                Marcelly Voloch</td>
+                              <td>A definir</td>
+                              <td>Integr. em Adm. 3</td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">6</th>
+                              <td>Consultoria Júnior Na Empresa Cantina Scolaro</td>
+                              <td>Eduarda Bulat,
+                                Fabiana Padilha,
+                                João Vieira,
+                                Leticia Fritsch,
+                                Luiza Casali,
+                                Mariana Tosatti</td>
+                              <td>A definir</td>
+                              <td>Integr. em Adm. 3</td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">7</th>
+                              <td>Empreendedorismo Em Processos Organizacionais: O Caso Do Supermercado Nordio</td>
+                              <td>Chrisleid Ceron,
+                                Juliana dos Santos,
+                                Kevelin Gonçalves,
+                                Lara Bitencourt,
+                                Luana Duarte</td>
+                              <td>A definir</td>
+                              <td>Integr. em Adm. 3</td>
+                            </tr>
+
+                            <!-- Info 2 -->
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Automação Residencial utilizando Energia Renovável</td>
+                              <td>Ariana Schultz,
+                                Kamile Roessler,
+                                Matheus Eger,
+                                Ronald Perego,
+                                Ryan,
+                                Thiago Piccoli</td>
+                              <td>A definir</td>
+                              <td>Integr. em Informática 2</td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Quiosques Solares</td>
+                              <td>Amanda Filipini,
+                                Gabriela Nora,
+                                Tainá Lima,
+                                Vinicius Piccoli</td>
+                              <td>A definir</td>
+                              <td>Integr. em Informática 2</td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Ctrl+S (Site de contratação de TI)</td>
+                              <td>Gabrielly Endrigo,
+                                Marcos Scheufele,
+                                Vinicius Signorelli</td>
+                              <td>A definir</td>
+                              <td>Integr. em Informática 2</td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>Robô para ajudar na alimentação de animais domésticos</td>
+                              <td>Anne L.,
+                                Julia E.,
+                                Lucas A, 
+                                Luiz L.
+                              </td>
+                              <td>A definir</td>
+                              <td>Integr. em Informática 2</td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">5</th>
+                              <td>Sistema de Monitoramento e Tratamento para Limpeza de Caixas d’água</td>
+                              <td>Gabriela Santin,
+                                Hemily Bleicher,
+                                Júlia Hasse,
+                                Mariana Gomes,
+                                Thais Morais,
+                                Vanessa Souza</td>
+                              <td>A definir</td>
+                              <td>Integr. em Informática 2</td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">6</th>
+                              <td>Smart Parking</td>
+                              <td>Pedro Bertotto,
+                                João Trindade,
+                                Bruno Mazzotti,
+                                Luiz Gustavo Feix,
+                                Almir Junior</td>
+                              <td>A definir</td>
+                              <td>Integr. em Informática 2</td>
+                            </tr>
+
+                            <!-- Info 3 -->
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Projeto BusLove</td>
+                              <td>Carolina Silva,
+                                Guilherme Levecke,
+                                Eduardo Borges,
+                                Gustavo Reibnitz,
+                                Felipe Mayer,
+                                Guilherme Scholl,
+                                Rafael Paulek</td>
+                              <td>A definir</td>
+                              <td>Integr. em Informática 3</td>
+                            </tr> 
+
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Projeto DeafMath</td>
+                              <td>Eric Silveira,
+                                Patrick da Silva,
+                                Gabriel Balatka,
+                                Vitor Rachinski,
+                                Keila Kiéski,
+                                Bernardo Spanholo,
+                                Ana Carolina Belenke</td>
+                              <td>A definir</td>
+                              <td>Integr. em Informática 3</td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Projeto DroneImages</td>
+                              <td>Luciano de Rossi,
+                                Giordan Cador,
+                                Airan Pinzigher,
+                                Reinaldo Ribeiro,
+                                João Jagnez</td>
+                              <td>A definir</td>
+                              <td>Integr. em Informática 3</td>
+                            </tr>                         
+
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>Projeto Latinder</td>
+                              <td>Nicholas Wojeicchowski,
+                                Fernando Franceschet,
+                                Renato Musskopf,
+                                Bruno Musskopf,
+                                Isabela Schmidt,
+                                Lívia Maria,
+                                Nicolas Abatti</td>
+                              <td>A definir</td>
+                              <td>Integr. em Informática 3</td>
+                            </tr>                                                                      
+                            <!-- PLast 1 -->
+                            <tr>
+                              <th scope="row">A</th>
+                              <td>Uso e aplicações da técnica de impressão 3D, utilizando material biodegradável</td>
+                              <td>Anna Santos,
+                                Brunus Rowoldt,
+                                Ciliane Santos,
+                                Fernanda Noronha,
+                                Maria Reis,
+                                Rafaela Hennig</td>
+                              <td>A definir</td>
+                              <td>Integr. em Plásticos 1</td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">B</th>
+                              <td>Se essa rua fosse minha... Coleta Seletiva e reciclagem</td>
+                              <td>Bruno Both,
+                                Henro Estanislowski,
+                                Kaio Silva,
+                                Luan Soares,
+                                Andrei Cordeiro</td>
+                              <td>A definir</td>
+                              <td>Integr. em Plásticos 1</td>
+                            </tr>
+
+
+                            <tr>
+                              <th scope="row">C</th>
+                              <td>Elaboração de um sistema para captação e reutilização de água da chuva</td>
+                              <td>Antônio Neto,
+                                Guilherme Siqueira,
+                                Guilherme Tomazi,
+                                Iago Bortolini,
+                                João Reis,
+                                Rodrigo Lusa</td>
+                              <td>A definir</td>
+                              <td>Integr. em Plásticos 1</td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">D</th>
+                              <td>Reciclagem de PEAD para produção de sementeiras por termoformagem</td>
+                              <td>Davi de Souza,
+                                Gabriela Zampronio,
+                                Mariana Marin,
+                                Naoany Santos,
+                                Sthefany Brusco,
+                                Thiago Ribas</td>
+                              <td>A definir</td>
+                              <td>Integr. em Plásticos 1</td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">E</th>
+                              <td>Sustentabilidade empresarial: Jogos sustentáveis</td>
+                              <td>Clarice Souza,
+                                Emanuelle Santos,
+                                Gabriele Barbosa,
+                                Kawane França,
+                                Maria Favarin,
+                                Maria Zielke</td>
+                              <td>A definir</td>
+                              <td>Integr. em Plásticos 1</td>
+                            </tr>
+
+                           <tr> 
+                              <th scope="row">F</th>
+                              <td>Poesia no Varal</td>
+                              <td>Ana Chiarello,
+                                Caroline Guimarães,
+                                Fernanda Souza,
+                                Gabriela Coelho,
+                                Isabela Coelho,
+                                Julia Coelho,
+                                Vanessa Grisotti</td>
+                              <td>A definir</td>
+                              <td>Integr. em Plásticos 1</td>
+                            </tr>
+                        <!-- Plásticos 2 -->
+                            <tr> 
+                              <th scope="row">A</th>
+                              <td>Uso e aplicações da técnica de impressão 3D, utilizando PS reciclado</td>
+                              <td>Adriel Rosa,
+                                Bruno Silva,
+                                Kaio Miranda,
+                                Mario Freitas,
+                                Matheus Zanella,
+                                Pedro Haymussi</td>
+                              <td>A definir</td>
+                              <td>Integr. em Plásticos 2</td>
+                            </tr>
+
+                            <tr> 
+                              <th scope="row">B</th>
+                              <td>Uso e aplicações da técnica de impressão 3D, utilizando polietileno reciclado</td>
+                              <td>Allan Bortese,
+                                Amanda Santos,
+                                Gabriel Luz,
+                                Isabela Lima,
+                                João Soares,
+                                Luisa Tristao,
+                                Matheus Godoy</td>
+                              <td>A definir</td>
+                              <td>Integr. em Plásticos 2</td>
+                            </tr>
+
+                            <tr> 
+                              <th scope="row">C</th>
+                              <td>Produção de uma injetora de pequeno porte para produção de jogos de xadrez</td>
+                              <td>Davi Bajuk,
+                                Gabrielly Vieira,
+                                Gustavo Oliveira,
+                                Nicoly Maia,
+                                Wellen Seron,
+                                Gustavo Kieslich,
+                                Matheus Godoy,
+                                Victor Bettio</td>
+                              <td>A definir</td>
+                              <td>Integr. em Plásticos 2</td>
+                            </tr>
+
+                            <tr> 
+                              <th scope="row">D</th>
+                              <td>Reciclagem de PP e PS para produção de perfis extrudados</td>
+                              <td>Eduarda Polak,
+                                Evelyn Colla,
+                                Felipe Kosciow,
+                                Felipe Da Silva,
+                                Karla Chaves,
+                                Laís Felix,
+                                Ricardo Borges</td>
+                              <td>A definir</td>
+                              <td>Integr. em Plásticos 2</td>
+                            </tr>
+
+                            <tr> 
+                              <th scope="row">E</th>
+                              <td>Biopolímeros</td>
+                              <td>Isabella Grutzmann,
+                                Julia Percegona,
+                                Laís Ponzoni,
+                                Laísa Figur,
+                                Letícia Corrêa,
+                                Marina Zir</td>
+                              <td>A definir</td>
+                              <td>Integr. em Plásticos 2</td>
+                            </tr>
+
+                            <!-- Pesquisa -->
+                            <tr> 
+                              <th scope="row">E</th>
+                              <td>Desenvolvimento de novos materiais extratores constituídos de blendas poliméricas para aplicação em química analítica</td>
+                              <td>Isabelli Rossi</td>
+                              <td>A definir</td>
+                              <td>Projetos de Pesquisa/Extensão</td>
                             </tr>
                           </tbody>
                         </table>       
@@ -331,38 +703,23 @@
         <div class="container">
             <div class="row">
                 <h1 class="text-center section-title col-12 mb-5">EDIÇÕES ANTERIORES</h1>
-                <article class="col-md-6 col-sm-12 " >
-                    <p class="pl-md-5"><span class="ml-3"></span> A Semana Nacional de Ciência e Tecnologia (SNCT) 2017 foi um sucesso. O
-                        evento do IFSC (Instituto Federal de Santa Catarina).
-                        A cerimônia de abertura foi realizada na noite de terça, 24/10/2017 com
-                        apresentações da Banda Marcial Aurora e do grupo teatral “Boca de Siri”,
-                        além de uma palestra com o engenheiro florestal Jackson Jarzynski, o qual
-                        tratou sobre “Segurança no trabalho frente às transformações tecnológicas”.
-                        O evento continua diversas atividades e visita de alunos de escolas
-                        municipais e estaduais. Estima-se que, em Caçador, mais de 1,2 mil pessoas
-                        participem durante os três dias de evento.
-                            Segundo o diretor-geral do câmpus, Eduardo Nascimento Pires, o objetivo do
-                        SNCT é aproximar a ciência e a tecnologia da população. Ele destaca que a
-                        instituição está presente no município há sete anos, e todo ano forma mais de
-                        mil alunos.
-
-                    </p>
-                </article>
                 <article class="col-md-6 col-sm-12 ">
-                    <p><span class="ml-3 "></span>Já em 2016 a abertura contou com três belíssimas apresentações culturais: Grupo de Dança
-                        Amigos da Tradição, Grupo de Capoeira Etnia Afro e Fresnel Gaspard, aluno do
-                        curso FIC em Língua Portuguesa e Cultura Brasileira, num solo de clarinete, que
-                        mostraram um pouco da diversidade cultural presente em Caçador.
-                        Após as apresentações culturais, o evento seguiu com a palestra “O declínio de
-                        polinizadores e o seu efeito sobre a produção de alimentos” ministrada pelo Prof. Dr.
-                        André Amarildo Sezerino, da Epagri Caçador. A palestra abordou a relação entre a
-                        mortandade de abelhas polinizadoras e a consequência na produção de alimentos,
-                        pois alguns alimentos estão diretamente relacionados à polinização.
-                            Foi a primeira vez o Câmpus utilizou a transmissão ao vivo via Facebook na
-                        cobertura de um evento, que surtiu bastante efeito, tendo mais de 3500 visualizações.
+                    <p class="pl-md-5"><span class="ml-3 "></span><strong>Em 2016, a abertura da Semana Nacional de Ciência e Tecnologia</strong> contou com três belíssimas apresentações culturais: Grupo de Dança Amigos da Tradição, Grupo de Capoeira Etnia Afro e Fresnel Gaspard, aluno do curso FIC em Língua Portuguesa e Cultura Brasileira, num solo de clarinete, que mostraram um pouco da diversidade cultural presente em Caçador.</p>
+                    <p class="pl-md-5"> Após as apresentações culturais, o evento seguiu com a palestra “O declínio de polinizadores e o seu efeito sobre a produção de alimentos” ministrada pelo Prof. Dr. André Amarildo Sezerino, da Epagri Caçador. A palestra abordou a relação entre a mortandade de abelhas polinizadoras e a consequência na produção de alimentos, pois alguns alimentos estão diretamente relacionados à polinização. Foi a primeira vez que o Câmpus utilizou a transmissão ao vivo via Facebook na cobertura de um evento, que surtiu bastante efeito, tendo mais de 3500 visualizações.
 
                     </p>
                 </article>
+
+                <article class="col-md-6 col-sm-12 " >
+                    <p><span class="ml-3"></span> A <strong>Semana Nacional de Ciência e Tecnologia 2017 também foi um sucesso</strong>. A cerimônia de abertura foi realizada na noite de terça, 24 de outubro, com apresentações da Banda Marcial Aurora e do grupo teatral “Boca de Siri”, além de uma palestra com o engenheiro florestal Jackson Jarzynski, o qual tratou sobre “Segurança no trabalho frente às transformações tecnológicas”. O evento continuou com diversas atividades e visitas de alunos de escolas municipais e estaduais. Estima-se que, em Caçador, mais de 1,2 mil pessoas tenham participado durante os três dias de evento.
+                    <p>Segundo o diretor-geral do câmpus, Eduardo Nascimento Pires, o objetivo do SNCT é aproximar a Ciência e a Tecnologia da população. Ele destacou que a    instituição está presente no município desde 2010, e todo ano forma mais de    mil alunos.
+                    </p>
+
+                    <p>
+                        Já em <strong>2018, na Semana Nacional de Ciência e Tecnologia</strong>, a instituição abriu as portas para a comunidade com feira de ciências, seminários, oficinas, palestras, mostra de trabalhos de Ensino, Pesquisa, Extensão. Foi promovida uma integração entre as escolas das redes municipal, estadual e Federal do município, bem como as instituições públicas formadoras (Câmpus Caçador, Prefeitura Municipal de Caçador, Prefeitura Municipal de Calmon, Prefeitura Municipal de Lebon Régis, Prefeitura Municipal de Rio das Antas, Uniarp-Caçador, Senai-Caçador, Senac-Caçador).
+                    </p>
+                </article>
+                
                 <div class="d-flex justify-content-center">
                 <div id="carouselExampleControls" class="carousel slide col-md-8 col-sm-12" data-ride="carousel">
                     <div class="carousel-inner">
@@ -380,6 +737,18 @@
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100 rounded" src="img/foto5.jpg">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 rounded" src="img/foto6.jpg">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 rounded" src="img/foto7.jpg">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 rounded" src="img/foto8.jpg">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 rounded" src="img/foto9.jpg">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -461,7 +830,28 @@
                 <div class="collapse w-100" id="faq4">
                     <div class="card card-body  col-sm-12 col-md-12 w-100">
                         <h3>Sim</h3>
-                        <p>Além de ser gratuito, a semana nacional de ciência e tecnologia é aberta para toda a comunidade de Caçador e região</p>
+                        <p>Além de ser gratuito, a Semana Nacional de Ciência e Tecnologia é aberta para toda a comunidade de Caçador e região</p>
+                    </div>
+                </div>
+
+                <button class="btn  shadow text-dark col-sm-12 col-md-12 d-flex justify-content-left mt-3" style="font-size: 20px; background-color: lightskyblue" type="button" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="faq4">
+                    <i class="mt-1 mr-1 fas fa-plus fa-1x"></i>Comissão Organizadora - Local
+                </button>
+                <div class="collapse w-100" id="faq5">
+                    <div class="card card-body  col-sm-12 col-md-12 w-100">
+                        <h3>Comissão organizadora - Câmpus Caçador</h3>
+                        <p>
+                            <ul>
+                                <li>Estrutura: Vitor, Luiz e William;</li>
+                                <li>Divulgação digital: Cristiano e Nicholas Wojeicchowski, Fernando Franceschet e Bruno Musskopf (Tchô Coders) + Cristiane e Fabiane;</li>
+                                <li>Ônibus e ofícios: Rodrigo, Eduardo e Jaison;</li>
+                                <li>Roteiro de visitação: Bruno e Lúcio</li>
+                                <li>Lanche: Viviane e Eduardo</li>
+                                <li>Contatos externos: Eduardo, Jaison, Patrícia</li>
+                                <li>Apresentações culturais: William e Patrícia</li>
+                                <li>Programação: Jaison, Patrícia e Douglas</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
 
@@ -483,5 +873,8 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+        $('body').scrollspy({ target: '#ul' });
+    </script>
 </body>
 </html>
