@@ -2,7 +2,305 @@
 <html lang="pt-br">
 <head>
     <title>SNCT 2019</title>
+    <script>
+        var n = 0;
+        window.setInterval(function(){
+            n++;
+            if(n===3){
+                document.getElementById("btnv1").style.display="inline-block";
+                document.getElementById("btnv2").style.display="inline-block";
+                document.getElementById("btnv3").style.display="inline-block";
+                document.getElementById("btnv4").style.display="inline-block";
+            }
+        },1000);
+    </script>
     <style>
+        .videoClicavel{
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }.videoClicavel2{
+             display: none;
+             position: absolute;
+             z-index: 1;
+         }
+        .videoClicavel3{
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }
+        .videoClicavel4{
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }
+        @media screen and (min-width: 300px){
+            .videoClicavel {
+
+                width: 55px;
+                height: 55px;
+                margin-left: 8%;
+                top: 100px;
+            }
+            .videoClicavel2 {
+                width: 55px;
+                height: 55px;
+                margin-left: 32%;
+                top: 100px;
+            }
+            .videoClicavel3 {
+                width: 55px;
+                height: 55px;
+                margin-left: 54%;
+                top: 100px;
+            }
+            .videoClicavel4 {
+                width: 55px;
+                height: 55px;
+                margin-left: 76%;
+                top: 100px;
+            }
+        }
+        @media screen and (min-width: 411px){
+            .videoClicavel {
+
+                width: 70px;
+                height: 70px;
+                margin-left: 8%;
+                top: 120px;
+            }
+            .videoClicavel2 {
+                width: 70px;
+                height: 70px;
+                margin-left: 32%;
+                top: 120px;
+            }
+            .videoClicavel3 {
+                width: 70px;
+                height: 70px;
+                margin-left: 54%;
+                top: 120px;
+            }
+            .videoClicavel4 {
+                width: 70px;
+                height: 70px;
+                margin-left: 76%;
+                top: 120px;
+            }
+        }
+        @media screen and (min-width: 600px){
+            .videoClicavel {
+
+                width: 100px;
+                height: 100px;
+                margin-left: 5%;
+                top: 140px;
+            }
+            .videoClicavel2 {
+                width: 100px;
+                height: 100px;
+                margin-left: 25%;
+                top: 140px;
+            }
+            .videoClicavel3 {
+                width: 100px;
+                height: 100px;
+                margin-left: 48%;
+                top: 140px;
+            }
+            .videoClicavel4 {
+                width: 100px;
+                height: 100px;
+                margin-left: 66%;
+                top: 140px;
+            }
+        }
+        @media screen and (min-width: 768px){
+            .videoClicavel {
+                width: 150px;
+                height: 150px;
+                margin-left: 3%;
+                top: 210px;
+            }
+            .videoClicavel2 {
+                width: 150px;
+                height: 150px;
+                margin-left: 25%;
+                top: 210px;
+            }
+            .videoClicavel3 {
+                width: 150px;
+                height: 150px;
+                margin-left: 48%;
+                top: 210px;
+            }
+            .videoClicavel4 {
+                width: 150px;
+                height: 150px;
+                margin-left: 72%;
+                top: 210px;
+            }
+        }
+        @media screen and (min-width: 960px){
+            .videoClicavel {
+                width: 150px;
+                height: 150px;
+                margin-left: 3%;
+                top: 170px;
+            }
+            .videoClicavel2 {
+                width: 150px;
+                height: 150px;
+                margin-left: 22%;
+                top: 170px;
+            }
+            .videoClicavel3 {
+                width: 150px;
+                height: 150px;
+                margin-left: 40%;
+                top: 170px;
+            }
+            .videoClicavel4 {
+                width: 150px;
+                height: 150px;
+                margin-left: 57%;
+                top: 170px;
+            }
+        }
+        @media screen and (min-width: 1024px){
+            .videoClicavel {
+                width: 170px;
+                height: 170px;
+                margin-left: 6%;
+                top: 280px;
+            }
+            .videoClicavel2 {
+                width: 170px;
+                height: 170px;
+                margin-left: 27%;
+                top: 280px;
+            }
+            .videoClicavel3 {
+                width: 170px;
+                height: 170px;
+                margin-left: 48%;
+                top: 280px;
+            }
+            .videoClicavel4 {
+                width: 170px;
+                height: 170px;
+                margin-left: 72%;
+                top: 280px;
+            }
+        }
+        @media screen and (min-width: 1280px){
+            .videoClicavel {
+
+                width: 190px;
+                height: 190px;
+                margin-left: 5%;
+                top: 340px;
+            }
+            .videoClicavel2 {
+                width: 190px;
+                height: 190px;
+                margin-left: 27%;
+                top: 340px;
+            }
+            .videoClicavel3 {
+                width: 190px;
+                height: 190px;
+                margin-left: 48%;
+                top: 340px;
+            }
+            .videoClicavel4 {
+                width: 190px;
+                height: 190px;
+                margin-left: 72%;
+                top: 340px;
+            }
+        }
+        @media screen and (min-width: 1360px){
+            .videoClicavel {
+
+                width: 190px;
+                height: 190px;
+                margin-left: 5%;
+                top: 340px;
+            }
+            .videoClicavel2 {
+                width: 190px;
+                height: 190px;
+                margin-left: 24%;
+                top: 340px;
+            }
+            .videoClicavel3 {
+                width: 190px;
+                height: 190px;
+                margin-left: 44%;
+                top: 340px;
+            }
+            .videoClicavel4 {
+                width: 190px;
+                height: 190px;
+                margin-left: 64%;
+                top: 340px;
+            }
+        }
+        @media screen and (min-width: 1600px){
+            .videoClicavel {
+
+                width: 190px;
+                height: 190px;
+                margin-left: 3.5%;
+                top: 340px;
+            }
+            .videoClicavel2 {
+                width: 190px;
+                height: 190px;
+                margin-left: 21.5%;
+                top: 340px;
+            }
+            .videoClicavel3 {
+                width: 190px;
+                height: 190px;
+                margin-left: 38.5%;
+                top: 340px;
+            }
+            .videoClicavel4 {
+                width: 190px;
+                height: 190px;
+                margin-left: 54.5%;
+                top: 340px;
+            }
+        }
+        @media screen and (min-width: 1920px){
+            .videoClicavel {
+
+                width: 190px;
+                height: 190px;
+                margin-left: 3.5%;
+                top: 340px;
+            }
+            .videoClicavel2 {
+                width: 190px;
+                height: 190px;
+                margin-left: 18.5%;
+                top: 340px;
+            }
+            .videoClicavel3 {
+                width: 190px;
+                height: 190px;
+                margin-left: 31.5%;
+                top: 340px;
+            }
+            .videoClicavel4 {
+                width: 190px;
+                height: 190px;
+                margin-left: 46.5%;
+                top: 340px;
+            }
+        }
         @font-face {
             font-family: Arciform;
             src: url(fontes/Arciform.otf);
@@ -47,6 +345,10 @@
     <!-- VIDEO -->
     <div class="container">
         <div class="row">
+            <div><a href="#localizacao" id="btnv1" class="videoClicavel " style="display: none"></a></div>
+            <div><a href="#localizacao" id="btnv2" class="videoClicavel2 " style="display: none"></a></div>
+            <div><a href="#programacao" id="btnv3" class="videoClicavel3 " style="display: none"></a></div>
+            <div><a href="#palestrantes" id="btnv4" class="videoClicavel4 " style="display: none"></a></div>
             <video  class="col-md-12 " autobuffer muted autoplay  playsinline poster="img/SNCTposter.jpg">
                 <source src="videos/SNCT.mp4" type="video/mp4"  >
             </video>
